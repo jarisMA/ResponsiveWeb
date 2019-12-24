@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <style>
+    .container {
+      background-color: gray;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .clearfix:after {
+      /* clear:both用来清除浮动，其余属性都是用来隐藏元素*/
+      content: ' ';
+      /* 加一段内容 */
+      display: block;
+      /* 让生成的元素以块级形式显示，占满空间 */
+      height: 0;
+      /* 避免生成的内容破环原有高度 */
+      clear: both;
+      /* 清除左右两边浮动 */
+      visibility: hidden;
+      /* 让生成的内容不可见  */
+    }
+
+    .clearfix {
+      *zoom: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <p class="float-left ">
+      For UI components, we don't recommend aiming for complete line-based coverage, because it
+      leads to too much focus on the internal implementation details of the components and could result in brittle
+      tests.
+    </p>
+    <p class="float-right">
+      Instead, we recommend writing tests that assert your component's public interface, and treat its internals as a
+      black box. A single test case would assert that some input (user interaction or change of props) provided to the
+      component results in the expected output (render result or emitted custom events).
+    </p>
+    <!-- <div style="clear:both;"> </div> -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+/* TEAM */
+
+  Developer: JarisMA
+
+/* SITE */
+
+	Last update:2019/12/19
+	Language: Chinese
+	Doctype:HTML5
+	IDE: Visual Studio Code
