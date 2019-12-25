@@ -668,7 +668,7 @@ footer p {
     font-size: 1.2rem;
   }
 
-  .product .product-content .item .info p {
+  .product .product-content .item .info p span {
     font-size: 2rem;
   }
 
