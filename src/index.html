@@ -1,26 +1,31 @@
 <!--
  * @Author: jarisMA
  * @Date: 2019-12-19 15:51:52
- * @LastEditTime : 2019-12-24 15:32:09
+ * @LastEditTime : 2020-01-03 12:08:12
  * @LastEditors  : jarisMA
  -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--表示强制以最新的IE浏览器模式渲染页面-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>理财宝 首页</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./js/vendor/OwlCarousel2-master/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./js/vendor/OwlCarousel2-master/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
   <!--[if lte IE 8]>
-    <p class="browserupgrade">您的浏览器版本老的可笑，请到 <a href="https://browsehappy.com/">这里</a> 更新，以获取最佳的体验。</p>
-  <![endif]-->
+      <p class="browserupgrade">
+        您的浏览器版本老的可笑，请到
+        <a href="https://browsehappy.com/">这里</a> 更新，以获取最佳的体验。
+      </p>
+    <![endif]-->
   <header>
     <nav class="top">
       <span class="tel">理财热线： 400-888-8888</span>
@@ -37,16 +42,16 @@
         <img src="img/logo@1x.png" alt="回到首页" />
       </a>
       <ul>
-        <li><a href="#">首页</a>
-        <li><a href="#">理财频道</a>
-        <li><a href="#">投资频道</a>
-        <li><a href="#">新手专区</a>
-        <li><a href="#">安全保障</a>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">理财频道</a></li>
+        <li><a href="#">投资频道</a></li>
+        <li><a href="#">新手专区</a></li>
+        <li><a href="#">安全保障</a></li>
       </ul>
     </nav>
   </header>
   <div class="container">
-    <div class="transaction">
+    <div class="transaction clearfix">
       <div class="trans-content">
         <div class="trans-data">
           <span>平台累计成交金额</span>
@@ -64,32 +69,47 @@
       </div>
     </div>
     <div class="ad">
-      <div class="item clearfix">
-        <img src="img/ad001.png" />
-      </div>
-      <div class="item clearfix">
-        <img src="img/ad002.png" />
-      </div>
-      <div class="item clearfix">
-        <img src="img/ad003.png" />
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <picture>
+            <source media="(min-width: 50em)" srcset="img/ad001-l.png" />
+            <source media="(min-width: 30em)" srcset="img/ad001-m.png" />
+            <img src="img/ad001.png" alt="2015年度报告" />
+          </picture>
+        </div>
+        <div class="item">
+          <picture>
+            <source media="(min-width: 50em)" srcset="img/ad002-l.png" />
+            <source media="(min-width: 30em)" srcset="img/ad002-m.png" />
+            <img src="img/ad002.png" alt="新年红包" />
+          </picture>
+        </div>
+        <div class="item">
+          <picture>
+            <source media="(min-width: 50em)" srcset="img/ad003-l.png" />
+            <source media="(min-width: 30em)" srcset="img/ad003-m.png" />
+            <img src="img/ad003.png" alt="新手秘籍" />
+          </picture>
+        </div>
       </div>
     </div>
     <section class="feature">
       <div class="item clearfix">
         <h3>安全</h3>
-        <p>国家AAA信用平台<br>银行资金托管<br>上市公司背景保证</p>
+        <p>国家AAA信用平台<br />银行资金托管<br />上市公司背景保证</p>
       </div>
       <div class="item clearfix">
         <h3>权威</h3>
-        <p>中央电视台推荐<br>互联网百强企业<br>标准起草单位</p>
+        <p>中央电视台推荐<br />互联网百强企业<br />标准起草单位</p>
       </div>
       <div class="item clearfix">
         <h3>省心</h3>
-        <p>100元起投<br>用户利益保障机制<br>保险公司承保</p>
+        <p>100元起投<br />用户利益保障机制<br />保险公司承保</p>
       </div>
     </section>
     <div class="notice clearfix">
-      <a href="#"><span>2019-12-31</span> 元旦期间业务受理及值班公告元旦期间业务受理及值班公告元旦期间业务受理及值班公告</a>
+      <a href="#"><span>2019-12-31</span>
+        元旦期间业务受理及值班公告元旦期间业务受理及值班公告元旦期间业务受理及值班公告</a>
       <a href="#" class="more">更多公告</a>
     </div>
     <section class="product clearfix">
@@ -103,8 +123,12 @@
         <div class="item clearfix ">
           <h3><em>3</em>个月</h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">3.50% <i>起</i></span></p>
-            <p>总成交金额：<span class="money">1800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">3.50% <i>起</i></span>
+            </p>
+            <p>
+              总成交金额：<span class="money">1800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">购买</a>
@@ -113,8 +137,12 @@
         <div class="item clearfix ">
           <h3><em>3-6</em>个月</h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">3.60% <i>起</i></span></p>
-            <p>总成交金额：<span class="money">2800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">3.60% <i>起</i></span>
+            </p>
+            <p>
+              总成交金额：<span class="money">2800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">购买</a>
@@ -123,8 +151,12 @@
         <div class="item clearfix">
           <h3><em>6-12</em>个月</h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">4.50% <i>起</i></span></p>
-            <p>总成交金额：<span class="money">3800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">4.50% <i>起</i></span>
+            </p>
+            <p>
+              总成交金额：<span class="money">3800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">购买</a>
@@ -133,8 +165,12 @@
         <div class="item clearfix">
           <h3><em>12-24</em>个月</h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">5.60% <i>起</i></span></p>
-            <p>总成交金额：<span class="money">4800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">5.60% <i>起</i></span>
+            </p>
+            <p>
+              总成交金额：<span class="money">4800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">购买</a>
@@ -143,8 +179,12 @@
         <div class="item clearfix">
           <h3><em>24</em>个月以上</h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">6.20% <i>起</i></span></p>
-            <p>总成交金额：<span class="money">5800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">6.20% <i>起</i></span>
+            </p>
+            <p>
+              总成交金额：<span class="money">5800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">购买</a>
@@ -162,8 +202,12 @@
         <div class="item clearfix">
           <h3><em>3</em>个月 <i>日常生活消费</i></h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">4.90% <i>起</i></span></p>
-            <p>金额：<span class="money">18,800 <i>元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">4.90% <i>起</i></span>
+            </p>
+            <p>
+              金额：<span class="money">18,800 <i>元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">投标</a>
@@ -172,8 +216,12 @@
         <div class="item clearfix">
           <h3><em>5</em>个月 <i>资金周转</i></h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">5.20% <i>起</i></span></p>
-            <p>金额：<span class="money">28,800 <i>元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">5.20% <i>起</i></span>
+            </p>
+            <p>
+              金额：<span class="money">28,800 <i>元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#">投标</a>
@@ -182,8 +230,12 @@
         <div class="item clearfix">
           <h3><em>7</em>个月 <i>个人消费</i></h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">5.50% <i>起</i></span></p>
-            <p>金额：<span class="money">38,800 <i>元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">5.50% <i>起</i></span>
+            </p>
+            <p>
+              金额：<span class="money">38,800 <i>元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#" class="disabled">还款中</a>
@@ -192,8 +244,12 @@
         <div class="item clearfix">
           <h3><em>1</em>个月 <i>日常生活消费</i></h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">4.60% <i>起</i></span></p>
-            <p>金额：<span class="money">48,800 <i>元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">4.60% <i>起</i></span>
+            </p>
+            <p>
+              金额：<span class="money">48,800 <i>元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#" class="disabled">还款中</a>
@@ -202,8 +258,12 @@
         <div class="item clearfix">
           <h3><em>12</em>个月以上 <i>资金周转</i></h3>
           <div class="info">
-            <p>约定年化收益率：<span class="year-rate">7.20% <i>起</i></span></p>
-            <p>金额：<span class="money">58,800 <i>万元</i></span></p>
+            <p>
+              约定年化收益率：<span class="year-rate">7.20% <i>起</i></span>
+            </p>
+            <p>
+              金额：<span class="money">58,800 <i>万元</i></span>
+            </p>
           </div>
           <div class="buy">
             <a href="#" class="disabled">已满标</a>
@@ -257,6 +317,11 @@
     </ul>
     <p>北京某互联网金融公司 版权所有 © 2015-2016</p>
   </footer>
+
+  <script src="./js/vendor/jquery.min.js"></script>
+  <script src="./js/vendor/OwlCarousel2-master/owl.carousel.min.js"></script>
+  <script src="./js/vendor/picturefill.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

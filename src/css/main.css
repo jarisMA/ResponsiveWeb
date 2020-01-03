@@ -143,7 +143,6 @@ header .top .tel {
 
 header .top ul {
   text-align: right;
-
 }
 
 header .top ul li {
@@ -252,7 +251,7 @@ header .main ul li a.active {
 /* 滚动广告 */
 
 .ad {
-  display: none;
+  /* display: none; */
 }
 
 /* 平台特点 */
@@ -585,9 +584,7 @@ footer p {
   color: #999;
 }
 
-
-@media only screen and (max-width:50em) {
-
+@media only screen and (max-width: 50em) {
   header .top ul li a {
     padding: 0 1rem;
   }
@@ -693,10 +690,9 @@ footer p {
     font-size: 1.4rem;
     line-height: 2.5rem;
   }
-
 }
 
-@media only screen and (min-width:30.0625em) and (max-width:50em) {
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
 
   .feature .item h3,
   .feature .item p {
@@ -711,7 +707,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width:30em) {
+@media only screen and (max-width: 30em) {
 
   header .top .tel,
   header .top ul li:nth-child(3),
@@ -734,7 +730,6 @@ footer p {
 
   .transaction {
     padding: 0.5rem 0;
-
   }
 
   .trans-data,
@@ -777,7 +772,7 @@ footer p {
   }
 
   .product h2 em:first-child:before {
-    content: " ";
+    content: ' ';
     display: table;
   }
 
@@ -836,19 +831,19 @@ footer p {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: ' ('attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: ' ('attr(title) ')';
   }
 
   /*
    * 使用#和javascript的超链接不打印href
    */
-  a[href ^='#']:after,
-  a[href ^='javascript:']:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
 
   pre,

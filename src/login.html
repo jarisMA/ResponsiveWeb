@@ -1,3 +1,9 @@
+<!--
+ * @Author: jarisMA
+ * @Date: 2019-12-19 15:52:11
+ * @LastEditTime : 2020-01-02 17:07:52
+ * @LastEditors  : jarisMA
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,10 +42,15 @@
     .clearfix {
       *zoom: 1;
     }
+
+    img {
+      max-width: 100%;
+    }
   </style>
 </head>
 
 <body>
+  <img src="img/s.png" srcset="img/s.png 480w,img/m.png 800w,img/l.png 1600w" sizes="(min-width:800px) 800px,100vw" />
   <div class="container clearfix">
     <p class="float-left ">
       For UI components, we don't recommend aiming for complete line-based coverage, because it
@@ -53,6 +64,7 @@
     </p>
     <!-- <div style="clear:both;"> </div> -->
   </div>
+
 </body>
 
 </html>
